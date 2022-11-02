@@ -18,6 +18,8 @@
 		ACBD68A929119081003ED963 /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD68A829119081003ED963 /* TransactionRowView.swift */; };
 		ACBD68AC29119929003ED963 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = ACBD68AB29119929003ED963 /* SwiftUIFontIcon */; };
 		ACBD68AE291199DD003ED963 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD68AD291199DD003ED963 /* TransactionListViewModel.swift */; };
+		ACBD68B02911CCA3003ED963 /* RecentTransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD68AF2911CCA3003ED963 /* RecentTransactionListView.swift */; };
+		ACBD68B22911CFEC003ED963 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD68B12911CFEC003ED963 /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		ACBD68A429118FE5003ED963 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		ACBD68A829119081003ED963 /* TransactionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRowView.swift; sourceTree = "<group>"; };
 		ACBD68AD291199DD003ED963 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		ACBD68AF2911CCA3003ED963 /* RecentTransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionListView.swift; sourceTree = "<group>"; };
+		ACBD68B12911CFEC003ED963 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				ACBD68A029118E01003ED963 /* TransactionModel.swift */,
 				ACBD68A229118F92003ED963 /* TransactionType.swift */,
+				ACBD68B12911CFEC003ED963 /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				ACBD688E29117A9C003ED963 /* ContentView.swift */,
 				ACBD68A829119081003ED963 /* TransactionRowView.swift */,
+				ACBD68AF2911CCA3003ED963 /* RecentTransactionListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBD68B02911CCA3003ED963 /* RecentTransactionListView.swift in Sources */,
 				ACBD68A129118E01003ED963 /* TransactionModel.swift in Sources */,
 				ACBD68A329118F92003ED963 /* TransactionType.swift in Sources */,
+				ACBD68B22911CFEC003ED963 /* CategoryModel.swift in Sources */,
 				ACBD68A529118FE5003ED963 /* PreviewData.swift in Sources */,
 				ACBD688F29117A9C003ED963 /* ContentView.swift in Sources */,
 				ACBD689C29118B1F003ED963 /* Extensions.swift in Sources */,

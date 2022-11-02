@@ -14,7 +14,13 @@ struct ContentView: View {
         NavigationView {
             ScrollView{
                 VStack(alignment: .leading, spacing: 25) {
-                
+                //MARK: - Title
+                    Text("Overview")
+                        .font(.title2)
+                        .bold()
+                    
+                    //MARK: - Trasnaction List
+                    RecentTransactionListView()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -43,5 +49,6 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
         }
+        .environmentObject(TransactionListViewModel())
     }
 }

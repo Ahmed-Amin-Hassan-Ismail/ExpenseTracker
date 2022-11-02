@@ -11,7 +11,7 @@ import Combine
 
 final class TransactionListViewModel: ObservableObject {
     //MARK: - Variables
-    @Published private var transactions: [Transaction] = []
+    @Published var transactions: [Transaction] = []
     private var cancellables = Set<AnyCancellable>()
     
     
@@ -38,7 +38,7 @@ final class TransactionListViewModel: ObservableObject {
                 return data
             }
             .decode(type: [Transaction].self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
+            .receive(on: RunLoop.main)
             .sink { completion in
                 switch completion {
                 case .failure(let error):

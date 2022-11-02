@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUIFontIcon
 
 
 //MARK: - Transaction
-struct Transaction: Identifiable, Codable {
+struct Transaction: Identifiable, Codable, Hashable {
     let id: Int
     let date: String
     let institution: String
@@ -30,5 +31,13 @@ struct Transaction: Identifiable, Codable {
     
     var signedAmount: Double {
         return (type == TransactionType.credit.rawValue) ? amount : -amount
+    }
+    
+    var icon: FontAwesomeCode {
+        if let category = Category.all.first(where: { $0.id == categoryId }) {
+            return category.icon
+        }
+        return .question
+        
     }
 }
