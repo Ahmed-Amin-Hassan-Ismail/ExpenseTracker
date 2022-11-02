@@ -30,6 +30,7 @@ struct ContentView: View {
             .navigationBarItems(trailing: setupNotificationIcon())
         }
         .navigationViewStyle(.stack)
+        .accentColor(.primary)
     }
 }
 

@@ -38,6 +38,9 @@ struct Transaction: Identifiable, Codable, Hashable {
             return category.icon
         }
         return .question
-        
+    }
+    
+    var month: String {
+        return dateParsed.formatted(.dateTime.year().month(.wide))
     }
 }
