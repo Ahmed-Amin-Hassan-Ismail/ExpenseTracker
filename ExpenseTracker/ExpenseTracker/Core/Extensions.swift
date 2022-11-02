@@ -33,3 +33,17 @@ extension String {
         return parseDate
     }
 }
+
+//MARK: - Date
+extension Date {
+    func formatted() -> String {
+        return self.formatted(.dateTime.year().month().day())
+    }
+}
+
+//MARK: - Double
+extension Double {
+    func roundedToTwoDigits() -> Double {
+        return (self * 100).rounded() / 100
+    }
+}
