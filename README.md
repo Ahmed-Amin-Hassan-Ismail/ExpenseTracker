@@ -10,5 +10,5 @@ iOS application for tracking your monthly expenses
 
 ## Main Screen 
 
-Uploading screen-recording-2022-11-02-at-111844-pm_2Vza7QMj.mp4…
+https://user-images.githubusercontent.com/82684071/200295292-59f9122a-6741-49c4-8eb7-f4553f154aef.mp4
 
